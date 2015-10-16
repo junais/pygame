@@ -142,6 +142,28 @@ def runGame():
                 soundHit.play()
                 return        
 
+        for snakeBody in snakeCoords[1:]:
+            if snakeBody['x']==killer5Coords[HEAD]['x'] and snakeBody['y']== killer5Coords[HEAD]['y']:
+                soundHit.play()
+                return                
+
+        for snakeBody in snakeCoords[1:]:
+            if snakeBody['x']==killer5Coords[HEAD]['x'] and snakeBody['y']== killer5Coords[HEAD]['y']:
+                soundHit.play()
+                return         
+
+        for snakeBody in snakeCoords[1:]:
+            if snakeBody['x']==killer6Coords[HEAD]['x'] and snakeBody['y']== killer6Coords[HEAD]['y']:
+                soundHit.play()
+                return        
+        for snakeBody in snakeCoords[1:]:
+            if snakeBody['x']==killer7Coords[HEAD]['x'] and snakeBody['y']== killer7Coords[HEAD]['y']:
+                soundHit.play()
+                return                
+        for snakeBody in snakeCoords[1:]:
+            if snakeBody['x']==killer8Coords[HEAD]['x'] and snakeBody['y']== killer8Coords[HEAD]['y']:
+                soundHit.play()
+                return                
                     
         if snakeCoords[HEAD]['x'] == apple['x'] and snakeCoords[HEAD]['y'] == apple['y']:
             soundObj.play()
